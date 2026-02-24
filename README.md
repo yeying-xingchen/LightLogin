@@ -1,7 +1,7 @@
-[English](https://github.com/CaaMoe/MultiLogin/blob/v6/README.en.md)
+[English](README.en.md)
 <div align="center">
 
-# MultiLogin
+# LightLogin
 
 _✨ 正版与多种外置登录共存 ✨_
 
@@ -12,13 +12,12 @@ _✨ 正版与多种外置登录共存 ✨_
 
 </div>
 
-> [!CAUTION]
-> 🚧 本项目已停止维护, 因维护与问题修复成本过高, 不再建议继续使用.  
-> 可加入QQ交流群了解详细内幕和获取同类型需求的解决方案.
+> [!NOTE]
+> 本项目Fork自MultiLogin，正在持续更新
 
 ## 概述
 
-MultiLogin 是一款主要为 Minecraft 代理端设计的插件，旨在实现对正版与多种外置登录共存的支持，用于连接两个或多个外置验证服务器下的玩家，使他们能够在同一个服务器上一起游戏。
+LightLogin 是一款主要为 Minecraft 代理端设计的插件，旨在实现对正版与多种外置登录共存的支持，用于连接两个或多个外置验证服务器下的玩家，使他们能够在同一个服务器上一起游戏。
 
 ## 特性
 
@@ -65,8 +64,8 @@ MultiLogin 是一款主要为 Minecraft 代理端设计的插件，旨在实现�
 [Discord](https://discord.gg/HJXHCZRS) 进来聊聊你的问题
 ## 贡献者
 
-<a href="https://github.com/CaaMoe/MultiLogin/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=CaaMoe/MultiLogin"  alt="作者头像"/>
+<a href="https://github.com/yeying-xingchen/LightLogin/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=yeying-xingchen/LightLogin"  alt="作者头像"/>
 </a>
 
-[我也想为贡献者之一？](https://github.com/CaaMoe/MultiLogin/pulls)
+[我也想为贡献者之一？](https://github.com/yeying-xingchen/LightLogin/pulls)
