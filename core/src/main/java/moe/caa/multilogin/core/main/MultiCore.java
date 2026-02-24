@@ -70,7 +70,7 @@ public class MultiCore implements MultiCoreAPI, MultiLoginAPI {
     @Getter
     private boolean floodgateSupported = false;
     @Getter
-    private final String httpRequestHeaderUserAgent = "MultiLogin/v2.0";
+    private final String httpRequestHeaderUserAgent = "";
 
     /**
      * 构建猫踢核心，这个方法将会被反射调用
