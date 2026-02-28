@@ -54,7 +54,6 @@ public class SkinRestorerFlows implements Callable<SkinRestorerResultImpl> {
         if (config.getSkinRestorer().getMethod() == SkinRestorerConfig.Method.UPLOAD) {
             request = new Request.Builder()
                     .url("https://api.mineskin.org/generate/upload")
-                    .header("User-Agent", "MultiLogin/v2.0")
                     .post(new MultipartBody.Builder()
                             .setType(MultipartBody.FORM)
                             .addFormDataPart("name", UUID.randomUUID().toString().substring(0, 6))
@@ -74,7 +73,6 @@ public class SkinRestorerFlows implements Callable<SkinRestorerResultImpl> {
 
             request = new Request.Builder()
                     .url("https://api.mineskin.org/generate/url")
-                    .header("User-Agent", core.getHttpRequestHeaderUserAgent())
                     .header("Content-Type", "application/json")
                     .post(RequestBody.create(core.getGson().toJson(jo), MediaType.parse("application/json; charset=utf-8")))
                     .build();
@@ -103,7 +101,6 @@ public class SkinRestorerFlows implements Callable<SkinRestorerResultImpl> {
     private byte[] requireValidSkin(String skinUrl, String model) throws IOException {
         Request request = new Request.Builder()
                 .get()
-                .header("User-Agent", "MultiLogin/v2.0")
                 .url(skinUrl)
                 .build();
         // 下载皮肤原件

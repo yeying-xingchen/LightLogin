@@ -69,8 +69,6 @@ public class MultiCore implements MultiCoreAPI, MultiLoginAPI {
     private SemVersion semVersion;
     @Getter
     private boolean floodgateSupported = false;
-    @Getter
-    private final String httpRequestHeaderUserAgent = "";
 
     /**
      * 构建猫踢核心，这个方法将会被反射调用

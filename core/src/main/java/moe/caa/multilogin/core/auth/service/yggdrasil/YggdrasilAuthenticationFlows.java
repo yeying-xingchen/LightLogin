@@ -41,7 +41,6 @@ public class YggdrasilAuthenticationFlows extends BaseFlows<HasJoinedContext> {
             return call0(config, new Request.Builder()
                     .get()
                     .url(url)
-                    .header("User-Agent", core.getHttpRequestHeaderUserAgent())
                     .build());
         } else if (config.getHttpRequestMethod() == BaseYggdrasilServiceConfig.HttpRequestMethod.POST) {
             return call0(config, new Request.Builder()
@@ -49,7 +48,6 @@ public class YggdrasilAuthenticationFlows extends BaseFlows<HasJoinedContext> {
                             config.generateAuthPostContent(username, serverId, ip).getBytes(StandardCharsets.UTF_8)
                     ))
                     .url(url)
-                    .header("User-Agent", core.getHttpRequestHeaderUserAgent())
                     .header("Content-Type", "application/json")
                     .build());
         }
